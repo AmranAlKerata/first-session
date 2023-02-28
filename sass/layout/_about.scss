@@ -1,0 +1,78 @@
+@use "../helpers/vars" as *;
+@use "../helpers/mixins" as *;
+@use "../bootstrap/vendor/rfs" as *;
+
+.about-us,
+.vision,
+.mision {
+  .circles {
+    img {
+      position: absolute;
+      z-index: -1;
+      &.one {
+        width: 98px;
+        height: 98px;
+        top: 57px;
+        #{$start-dir}: 5%;
+        animation: floating ease-in-out 3s infinite;
+      }
+      &.two {
+        width: 40px;
+        height: 40px;
+        bottom: 57px;
+        #{$end-dir}: 30%;
+        animation: floating ease-in-out 1s infinite alternate;
+      }
+      &.three {
+        width: 74px;
+        height: 74px;
+        top: 103px;
+        #{$end-dir}: 4%;
+        animation: left_right ease-in-out 5s infinite;
+      }
+      &.four {
+        width: 74px;
+        height: 74px;
+        bottom: 40px;
+        #{$start-dir}: 2%;
+        animation: left_right ease-in-out 2s infinite alternate;
+      }
+    }
+  }
+  img {
+    width: 75%;
+  }
+  @include media ($lg) {
+    img {
+      width: 100%;
+    }
+  }
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    75% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes left_right {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateX(-30px);
+    }
+    75% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

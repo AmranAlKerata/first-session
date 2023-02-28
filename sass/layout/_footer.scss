@@ -1,0 +1,56 @@
+@use "../helpers/vars" as *;
+@use "../helpers/mixins" as *;
+@use "../bootstrap/vendor/rfs" as *;
+
+footer {
+  background-color: $pink;
+  @include padding-top(180px );
+  @include padding-bottom(50px);
+  @include media ($lg) {
+    @include padding-top(50px );
+  }
+  .footer-shape img {
+    top: -180px;
+  }
+  h3,
+  p {
+    color: $white;
+  }
+  h3 {
+    @include font-size(22px);
+    font-weight: 600;
+    padding-top: 30px;
+  }
+  li {
+    line-height: 2;
+  }
+  a {
+    color: $white;
+    @include font-size(16px);
+    &:hover {
+      color: $white;
+    }
+  }
+  .social-media {
+    li a {
+      margin-#{$start-dir}: 10px;
+    }
+    svg {
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.footer-bottom {
+  background-color: $text;
+  @include padding(15px 0);
+  p {
+    color: $white;
+    a {
+      @include font-size(18px);
+      color: $pink_light;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+$lang: "ar";
+
+$dir: ltr;
+$opp-dir: rtl;
+$start-dir: left;
+$end-dir: right;
+$transform-direction: 1;
+@if ($lang == "ar") {
+  $dir: rtl;
+  $opp-dir: ltr;
+  $start-dir: right;
+  $end-dir: left;
+  $transform-direction: -1;
+}
+
+$pink: #e8556f;
+$pink_light: #2b3990;
+$white: #fff;
+$text: #151514;
+$link: #707070;
+
+$xl: "max-width: 1200px";
+$lg: "max-width: 992px";
+$md: "max-width: 768px";
+$sm: "max-width: 576px";
+
+$cairo: 'Cairo', sans-serif;

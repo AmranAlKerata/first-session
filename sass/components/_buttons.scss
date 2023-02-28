@@ -1,0 +1,27 @@
+@use "../helpers/vars" as *;
+@use "../bootstrap/vendor/rfs" as *;
+
+.button {
+  background-color: $white;
+  border: 2px solid $white;
+  @include padding( 15px 40px);
+  border-radius: 10px;
+  @include font-size(18px);
+  color: $pink;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+  @include margin-top(30px);
+  display: inline-block;
+  &.alt {
+    background-color: $pink;
+    color: $white;
+    &:hover {
+      color: $pink;
+      border-color: $pink;
+    }
+  }
+  &:hover {
+    background-color: transparent;
+    color: $white;
+  }
+}

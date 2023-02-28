@@ -1,0 +1,34 @@
+@use "../helpers/vars" as *;
+@use "../bootstrap/vendor/rfs" as *;
+@use "../helpers/mixins" as *;
+
+.swiper-pagination {
+  position: absolute;
+  top: 50%;
+  width: fit-content !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  #{$start-dir}: 97% !important;
+  @include media ($lg) {
+    flex-direction: row;
+    #{$start-dir}: 50% !important;
+    top: 95%;
+    height: fit-content;
+    transform: translateX(-50%);
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: transparent;
+  border: 2px solid $white;
+  padding: 5px;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $pink !important;
+  border-color: $pink !important;
+}

@@ -1,0 +1,59 @@
+@use "../helpers/vars" as *;
+@use "../helpers/mixins" as *;
+@use "../bootstrap/vendor/rfs" as *;
+
+.our-services {
+  background-color: $pink;
+  padding: 80px 0;
+  .shapes {
+    img {
+      position: absolute;
+      z-index: -1;
+    }
+    .circle-lins-01 {
+      width: 267.73px;
+    }
+
+    .waves {
+      width: 290.4px;
+      #{$end-dir}: 0;
+    }
+    .circle-circle-01 {
+      width: 185.75px;
+      bottom: 20%;
+    }
+    .circle-circle-02 {
+      width: 185.75px;
+      bottom: 5%;
+      #{$end-dir}: 3%;
+    }
+  }
+  .row {
+    row-gap: 50px;
+  }
+  .section-heading {
+    h2,
+    p {
+      color: $white;
+    }
+    h2 {
+      @include font-size(50px);
+    }
+  }
+  .service-card {
+    height: 100%;
+    background-color: $white;
+    padding: 40px 40PX;
+    border-radius: 10px;
+    box-shadow: 0 0 30px -8px #3c3c3c;
+    margin-#{$end-dir}: 10px;
+    margin-left: 10px;
+    .card-image img {
+      border-radius: 100%;
+    }
+    .card-heading {
+      font-weight: 600;
+      @include font-size(25px);
+    }
+  }
+}

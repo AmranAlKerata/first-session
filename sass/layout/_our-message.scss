@@ -1,0 +1,42 @@
+@use "../helpers/vars" as *;
+@use "../helpers/mixins" as *;
+@use "../bootstrap/vendor/rfs" as *;
+
+.our-message {
+  @include padding-top(200px);
+  @include padding-bottom(200px);
+  @include media ($lg) {
+    padding-top: 0;
+  }
+  .bg {
+    img {
+      width: 70%;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      #{$start-dir}: 50%;
+      transform: translate(-50%, -40%);
+    }
+  }
+  .message img {
+    width: 70%;
+    text-align: start;
+  }
+  .shapes {
+    img {
+      position: absolute;
+    }
+    .heart-01 {
+      width: 123px;
+      height: 154px;
+      top: 22%;
+      #{$end-dir}: 11%;
+    }
+    .heart-02 {
+      width: 172px;
+      height: 89px;
+      bottom: 20%;
+      #{$start-dir}: 44%;
+    }
+  }
+}

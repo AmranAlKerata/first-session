@@ -1,0 +1,27 @@
+@use "../helpers/vars" as *;
+@use "../helpers/mixins" as *;
+@use "../bootstrap/vendor/rfs" as *;
+section {
+  padding: 150px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.section-heading {
+  margin-bottom: 80px;
+}
+
+.section-heading h2 {
+  @include margin-bottom(30px);
+}
+
+.section-heading p {
+  margin-bottom: 0;
+}
+@include media($sm) {
+  .section-heading h2,
+  .section-heading p {
+    text-align: center;
+  }
+}

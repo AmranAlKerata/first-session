@@ -1,0 +1,27 @@
+extends base/_base
+
+
+
+block title
+    - pageTitle = "Home"
+    title Pink Beauty Center | #{pageTitle}
+block styles 
+    include includes/_styles
+
+
+block scripts 
+    include includes/_scripts
+
+
+
+block layout 
+    include partials/_header
+    include layout/_hero
+    include layout/_about
+    include layout/_our_services
+    include layout/_team
+    include layout/_our_message
+    include partials/_footer
+
+
+
