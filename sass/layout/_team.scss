@@ -88,9 +88,9 @@
     border: 1px solid #e5e5e5;
     border-radius: 50%;
     background-color: #fff;
-    background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d567548e673d3556a285_Arrow%20Left.svg");
+    background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d62a9df52e68f7ebe257_Arrow%20Right.svg");
     background-position: 50% 50%;
-    background-size: auto;
+    background-size: 9px;
     background-repeat: no-repeat;
     transition: all 200ms ease;
   }
@@ -98,7 +98,7 @@
   .team-slider-arrow-left:hover {
     border-color: $pink;
     background-color: $pink;
-    background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d59c7b50eaa80a28db3a_Arrow%20left%20white.svg");
+    background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d64066e93c555836e99f_Arrow%20Right%20white.svg");
   }
 
   .team-slider-arrow-right {
@@ -111,7 +111,7 @@
     border: 1px solid #e5e5e5;
     border-radius: 50%;
     background-color: #fff;
-    background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d62a9df52e68f7ebe257_Arrow%20Right.svg");
+    background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d567548e673d3556a285_Arrow%20Left.svg");
     background-position: 50% 50%;
     background-size: 9px;
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@
   .team-slider-arrow-right:hover {
     border-color: $pink;
     background-color: $pink;
-    background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d64066e93c555836e99f_Arrow%20Right%20white.svg");
+    background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d59c7b50eaa80a28db3a_Arrow%20left%20white.svg");
   }
 
   .team-slider-overlay {
