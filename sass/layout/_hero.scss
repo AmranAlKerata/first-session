@@ -27,7 +27,6 @@
 
   .hero-img {
     position: absolute;
-    // left: -60px;
     max-width: 300px;
     top: 100px;
     transform: translateX(-60px);
@@ -35,6 +34,12 @@
       max-width: 500px;
       top: 50%;
       transform: translateX(-60px) translateY(-50%);
+    }
+    @include media($lg) {
+      top: unset;
+      bottom: 0;
+      left: 0;
+      max-width: 100px;
     }
   }
 
