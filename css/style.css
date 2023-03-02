@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
   font-size: 1rem;
   font-family: "cairo", sans-serif;
-  background-color: #e8556f;
+  background-color: #ab0066;
 }
 
 h1,
@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  color: #e8556f;
+  color: #ab0066;
   font-family: "cairo", sans-serif;
 }
 
@@ -151,7 +151,7 @@ textarea {
 
 .form-control {
   background-color: transparent;
-  border-color: #e8556f;
+  border-color: #ab0066;
   border-radius: 5px;
   min-height: 60px;
   position: relative;
@@ -161,7 +161,7 @@ textarea {
 .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: #2b3990;
+  border-color: #fff;
 }
 
 .animation-delay-1 {
@@ -233,8 +233,8 @@ textarea {
 input:focus,
 textarea:focus {
   background-color: transparent !important;
-  border-color: #2b3990 !important;
-  color: #2b3990 !important;
+  border-color: #fff !important;
+  color: #fff !important;
 }
 
 .floating-label-group {
@@ -283,7 +283,7 @@ textarea:focus {
   padding: 0.9375rem calc(1.375rem + 1.5vw);
   border-radius: 10px;
   font-size: 1.125rem;
-  color: #e8556f;
+  color: #ab0066;
   font-weight: 600;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -301,13 +301,13 @@ textarea:focus {
   }
 }
 .button.alt {
-  background-color: #e8556f;
+  background-color: #ab0066;
   color: #fff;
-  border-color: #e8556f;
+  border-color: #ab0066;
 }
 .button.alt:hover {
-  color: #e8556f;
-  border-color: #e8556f;
+  color: #ab0066;
+  border-color: #ab0066;
 }
 .button:hover {
   background-color: transparent;
@@ -360,8 +360,8 @@ textarea:focus {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #e8556f !important;
-  border-color: #e8556f !important;
+  background-color: #ab0066 !important;
+  border-color: #ab0066 !important;
 }
 
 body.loader-avtive {
@@ -376,7 +376,7 @@ body.loader-avtive {
   width: 100%;
   height: 100%;
   z-index: 999999999;
-  background-color: #e8556f;
+  background-color: #ab0066;
 }
 .loader-wrapper .loader {
   position: absolute;
@@ -482,7 +482,7 @@ section {
   }
 }
 header {
-  background-color: #e8556f;
+  background-color: #ab0066;
   position: fixed;
   width: 100%;
   right: 0;
@@ -581,7 +581,7 @@ header .nav-link:hover {
     display: block;
   }
   header #navbarNav {
-    background-color: #e8556f;
+    background-color: #ab0066;
     top: 0;
     right: 100%;
     z-index: 9;
@@ -833,7 +833,7 @@ header .nav-link:hover {
 }
 
 .our-services {
-  background-color: #e8556f;
+  background-color: #ab0066;
   padding: 80px 0;
 }
 .our-services .shapes img {
@@ -961,7 +961,7 @@ header .nav-link:hover {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  background-color: #e8556f;
+  background-color: #ab0066;
 }
 .team .team-photo-wrapper.blue {
   background-color: #96c1ca;
@@ -1119,7 +1119,7 @@ footer .social-media svg:hover {
 .page-banner {
   margin-top: calc(1.75rem + 6vw);
   height: 150px;
-  background-color: #e8556f;
+  background-color: #ab0066;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

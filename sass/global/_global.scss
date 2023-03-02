@@ -135,7 +135,7 @@ textarea {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: $pink_light;
+  border-color: #fff;
 }
 $delay: 100;
 @for $jobBox from 1 through 10 {
@@ -158,8 +158,8 @@ textarea {
   color: #fff !important;
   &:focus {
     background-color: transparent !important;
-    border-color: $pink_light !important;
-    color: $pink_light !important;
+    border-color: #fff !important;
+    color: #fff !important;
   }
 }
 .floating-label-group {
