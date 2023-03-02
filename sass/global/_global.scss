@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   font-size: 1rem;
   font-family: $cairo;
+  background-color: $pink;
 }
 h1,
 h2,
@@ -32,12 +33,13 @@ h6 {
   font-family: $cairo;
 }
 h1 {
-  color: $pink;
+  color: #fff;
   @include font-size(60px);
 }
 h2 {
   @include font-size(50px);
   font-weight: 600;
+  color: #fff;
 }
 h3,
 h4 {
@@ -50,7 +52,7 @@ q {
   @include font-size(18px);
   margin: 0;
   font-family: $cairo;
-  color: $text;
+  color: #fff;
   @include media ($md) {
     @include font-size(16px);
   }
@@ -152,8 +154,8 @@ $delay: 100;
 input,
 textarea {
   background-color: transparent !important;
-  border-color: $pink !important;
-  color: $pink !important;
+  border-color: #fff !important;
+  color: #fff !important;
   &:focus {
     background-color: transparent !important;
     border-color: $pink_light !important;
@@ -165,11 +167,11 @@ textarea {
   input,
   textarea {
     padding-left: 25px;
-    color: $pink;
-    border-color: $pink;
+    color: #fff;
+    border-color: #fff;
   }
   .floating-label {
-    color: $pink;
+    color: #fff;
     position: absolute;
     pointer-events: none;
     top: 17px;
@@ -179,13 +181,13 @@ textarea {
   input:focus ~ .floating-label,
   input:not(:focus):valid ~ .floating-label {
     top: -35px;
-    color: $pink_light;
+    color: #fff;
   }
 
   .is-floating-label {
     position: relative;
     label {
-      color: $pink;
+      color: #fff;
       position: absolute;
       pointer-events: none;
       top: 17px;
@@ -195,7 +197,7 @@ textarea {
 
     &.is-focused label {
       top: -35px;
-      color: $pink_light;
+      color: #fff;
     }
   }
 }

@@ -47,13 +47,18 @@
     border-radius: 10px;
     box-shadow: 0 0 30px -8px #3c3c3c;
     margin-#{$end-dir}: 10px;
-    margin-left: 10px;
+    @include media($md) {
+      margin-#{$end-dir}: 0;
+    }
     .card-image img {
       border-radius: 100%;
     }
     .card-heading {
       font-weight: 600;
       @include font-size(25px);
+    }
+    p {
+      color: $text;
     }
   }
 }

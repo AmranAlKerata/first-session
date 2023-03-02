@@ -22,6 +22,7 @@ body {
   overflow-x: hidden;
   font-size: 1rem;
   font-family: "cairo", sans-serif;
+  background-color: #e8556f;
 }
 
 h1,
@@ -36,7 +37,7 @@ h6 {
 }
 
 h1 {
-  color: #e8556f;
+  color: #fff;
   font-size: calc(1.5rem + 3vw);
 }
 @media (min-width: 1200px) {
@@ -48,6 +49,7 @@ h1 {
 h2 {
   font-size: calc(1.4375rem + 2.25vw);
   font-weight: 600;
+  color: #fff;
 }
 @media (min-width: 1200px) {
   h2 {
@@ -67,7 +69,7 @@ q {
   font-size: 1.125rem;
   margin: 0;
   font-family: "cairo", sans-serif;
-  color: #151514;
+  color: #fff;
 }
 @media (max-width: 768px) {
   p,
@@ -225,8 +227,8 @@ textarea {
 input,
 textarea {
   background-color: transparent !important;
-  border-color: #e8556f !important;
-  color: #e8556f !important;
+  border-color: #fff !important;
+  color: #fff !important;
 }
 input:focus,
 textarea:focus {
@@ -241,11 +243,11 @@ textarea:focus {
 .floating-label-group input,
 .floating-label-group textarea {
   padding-left: 25px;
-  color: #e8556f;
-  border-color: #e8556f;
+  color: #fff;
+  border-color: #fff;
 }
 .floating-label-group .floating-label {
-  color: #e8556f;
+  color: #fff;
   position: absolute;
   pointer-events: none;
   top: 17px;
@@ -256,13 +258,13 @@ textarea:focus {
 .floating-label-group input:focus ~ .floating-label,
 .floating-label-group input:not(:focus):valid ~ .floating-label {
   top: -35px;
-  color: #2b3990;
+  color: #fff;
 }
 .floating-label-group .is-floating-label {
   position: relative;
 }
 .floating-label-group .is-floating-label label {
-  color: #e8556f;
+  color: #fff;
   position: absolute;
   pointer-events: none;
   top: 17px;
@@ -272,7 +274,7 @@ textarea:focus {
 }
 .floating-label-group .is-floating-label.is-focused label {
   top: -35px;
-  color: #2b3990;
+  color: #fff;
 }
 
 .button {
@@ -374,7 +376,7 @@ body.loader-avtive {
   width: 100%;
   height: 100%;
   z-index: 999999999;
-  background-color: #fff;
+  background-color: #e8556f;
 }
 .loader-wrapper .loader {
   position: absolute;
@@ -480,7 +482,7 @@ section {
   }
 }
 header {
-  background-color: #fff;
+  background-color: #e8556f;
   position: fixed;
   width: 100%;
   right: 0;
@@ -510,7 +512,7 @@ header .menu {
 }
 header .line {
   fill: none;
-  stroke: #e8556f;
+  stroke: #fff;
   stroke-width: 6;
   -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -546,14 +548,14 @@ header.nav-up {
   top: -200px;
 }
 header .nav-link {
-  color: #707070;
+  color: #fff;
   font-size: 17px;
 }
 header .nav-link.active, header .nav-link:focus {
-  color: #e8556f;
+  color: #2b3990;
 }
 header .nav-link:hover {
-  color: #e8556f;
+  color: #2b3990;
 }
 @media (max-width: 1200px) {
   header .navbar {
@@ -579,7 +581,7 @@ header .nav-link:hover {
     display: block;
   }
   header #navbarNav {
-    background-color: #fff;
+    background-color: #e8556f;
     top: 0;
     right: 100%;
     z-index: 9;
@@ -656,6 +658,7 @@ header .nav-link:hover {
     bottom: 0;
     left: 0;
     max-width: 100px;
+    z-index: -1;
   }
 }
 .home .circle {
@@ -876,7 +879,11 @@ header .nav-link:hover {
   -webkit-box-shadow: 0 0 30px -8px #3c3c3c;
           box-shadow: 0 0 30px -8px #3c3c3c;
   margin-left: 10px;
-  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .our-services .service-card {
+    margin-left: 0;
+  }
 }
 .our-services .service-card .card-image img {
   border-radius: 100%;
@@ -890,9 +897,15 @@ header .nav-link:hover {
     font-size: 1.5625rem;
   }
 }
+.our-services .service-card p {
+  color: #151514;
+}
 
 .team .text-side {
   z-index: 3;
+}
+.team h2 {
+  color: #fff;
 }
 .team .team-name {
   margin-top: 0px;
@@ -901,9 +914,10 @@ header .nav-link:hover {
   font-size: 24px;
   line-height: 36px;
   font-weight: bold;
+  color: #fff;
 }
 .team .team-role {
-  color: #000;
+  color: #fff;
   font-size: 18px;
   line-height: 26px;
 }
@@ -922,9 +936,7 @@ header .nav-link:hover {
 .team .team-card {
   padding: calc(1.275rem + 0.3vw) calc(1.275rem + 0.3vw) calc(1.3125rem + 0.75vw);
   border-radius: 20px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 5px 20px 0 hsla(0deg, 0%, 89.8%, 0.5);
-          box-shadow: 0 5px 20px 0 hsla(0deg, 0%, 89.8%, 0.5);
+  background-color: #2b3990;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -998,8 +1010,8 @@ header .nav-link:hover {
   transition: all 200ms ease;
 }
 .team .team-slider-arrow-left:hover {
-  border-color: #e8556f;
-  background-color: #e8556f;
+  border-color: #2b3990;
+  background-color: #2b3990;
   background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d64066e93c555836e99f_Arrow%20Right%20white.svg");
 }
 .team .team-slider-arrow-right {
@@ -1020,18 +1032,19 @@ header .nav-link:hover {
   transition: all 200ms ease;
 }
 .team .team-slider-arrow-right:hover {
-  border-color: #e8556f;
-  background-color: #e8556f;
+  border-color: #2b3990;
+  background-color: #2b3990;
   background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d59c7b50eaa80a28db3a_Arrow%20left%20white.svg");
 }
 .team .team-slider-overlay {
   position: absolute;
   z-index: 2;
   width: 700px;
-  height: 100%;
+  height: 110%;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(53%, hsla(0deg, 0%, 100%, 0.94)), color-stop(70%, hsla(0deg, 0%, 100%, 0.8)), color-stop(87%, hsla(0deg, 0%, 100%, 0.48)), to(hsla(0deg, 0%, 100%, 0)));
-  background-image: linear-gradient(90deg, #fff 25%, hsla(0deg, 0%, 100%, 0.94) 53%, hsla(0deg, 0%, 100%, 0.8) 70%, hsla(0deg, 0%, 100%, 0.48) 87%, hsla(0deg, 0%, 100%, 0));
+  top: 0;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #e8556f), color-stop(53%, #e8556f), color-stop(70%, #e8556f), color-stop(87%, #e8556f), to(#e8556f));
+  background-image: linear-gradient(90deg, #e8556f 25%, #e8556f 53%, #e8556f 70%, #e8556f 87%, #e8556f);
 }
 .team .team-slider-overlay-left {
   position: absolute;
@@ -1128,7 +1141,7 @@ header .nav-link:hover {
 }
 
 footer {
-  background-color: #e8556f;
+  background-color: #2b3990;
   padding-top: calc(2.25rem + 12vw);
   padding-bottom: calc(1.4375rem + 2.25vw);
 }

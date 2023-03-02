@@ -3,7 +3,7 @@
 @use "../bootstrap/vendor/rfs" as *;
 
 footer {
-  background-color: $pink;
+  background-color: $pink_light;
   @include padding-top(180px );
   @include padding-bottom(50px);
   @include media ($lg) {

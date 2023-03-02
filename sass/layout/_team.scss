@@ -5,7 +5,9 @@
   .text-side {
     z-index: 3;
   }
-
+  h2 {
+    color: #fff;
+  }
   .team-name {
     margin-top: 0px;
     margin-bottom: 3px;
@@ -13,10 +15,11 @@
     font-size: 24px;
     line-height: 36px;
     font-weight: bold;
+    color: #fff;
   }
 
   .team-role {
-    color: #000;
+    color: #fff;
     font-size: 18px;
     line-height: 26px;
   }
@@ -39,8 +42,8 @@
   .team-card {
     @include padding(24px 24px 30px);
     border-radius: 20px;
-    background-color: $white;
-    box-shadow: 0 5px 20px 0 hsla(0, 0%, 89.8%, 0.5);
+    background-color: $pink_light;
+    // box-shadow: 0 5px 20px 0 hsla(0, 0%, 89.8%, 0.5);
     transition: all .3s ease-in-out;
     &:hover {
       transform: translateY(-20px);
@@ -96,8 +99,8 @@
   }
 
   .team-slider-arrow-left:hover {
-    border-color: $pink;
-    background-color: $pink;
+    border-color: $pink_light;
+    background-color: $pink_light;
     background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d64066e93c555836e99f_Arrow%20Right%20white.svg");
   }
 
@@ -120,8 +123,8 @@
   }
 
   .team-slider-arrow-right:hover {
-    border-color: $pink;
-    background-color: $pink;
+    border-color: $pink_light;
+    background-color: $pink_light;
     background-image: url("https://assets.website-files.com/6116cf941b0b13b582fa6cc5/6116d59c7b50eaa80a28db3a_Arrow%20left%20white.svg");
   }
 
@@ -129,28 +132,28 @@
     position: absolute;
     z-index: 2;
     width: 700px;
-    height: 100%;
+    height: 110%;
     #{$start-dir}: 0;
+    top: 0;
     background-image: -webkit-gradient(
       linear,
       left top,
       right top,
-      color-stop(25%, #fff),
-      color-stop(53%, hsla(0, 0%, 100%, 0.94)),
-      color-stop(70%, hsla(0, 0%, 100%, 0.8)),
-      color-stop(87%, hsla(0, 0%, 100%, 0.48)),
-      to(hsla(0, 0%, 100%, 0))
+      color-stop(25%, $pink),
+      color-stop(53%, #fffffff0),
+      color-stop(70%, #ffffffcc),
+      color-stop(87%, #ffffff7a),
+      to(#bb5d5d00)
     );
     background-image: linear-gradient(
       90deg,
-      #fff 25%,
-      hsla(0, 0%, 100%, 0.94) 53%,
-      hsla(0, 0%, 100%, 0.8) 70%,
-      hsla(0, 0%, 100%, 0.48) 87%,
-      hsla(0, 0%, 100%, 0)
+      $pink 25%,
+      #e8556f 53%,
+      #e8556f 70%,
+      #e8556f 87%,
+      #e8556f
     );
   }
-
   .team-slider-overlay-left {
     position: absolute;
     #{$start-dir}: -1000px;
