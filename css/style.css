@@ -563,7 +563,7 @@ header .nav-link.active, header .nav-link:focus {
 header .nav-link:hover {
   color: #2b3990;
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   header .navbar {
     padding-top: 0;
   }
@@ -603,17 +603,17 @@ header .nav-link:hover {
     transition: all 0.3s ease-in-out;
   }
 }
-@media (max-width: 1200px) and (min-width: 1200px) {
+@media (max-width: 768px) and (min-width: 1200px) {
   header #navbarNav {
     padding-top: 3.125rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   header #navbarNav.collapse.show {
     right: 0;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   header #navbarNav .nav-link {
     font-size: 1.25rem;
   }

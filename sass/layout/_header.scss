@@ -78,7 +78,7 @@ header {
     }
   }
 
-  @include media ($xl) {
+  @include media ($md) {
     .navbar {
       padding-top: 0;
     }
