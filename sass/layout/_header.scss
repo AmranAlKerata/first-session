@@ -3,7 +3,7 @@
 @use "../bootstrap/vendor/rfs" as *;
 
 header {
-  background-color: $pink;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   #{$start-dir}: 0;
@@ -66,8 +66,9 @@ header {
   }
 
   .nav-link {
-    color: #fff;
-    font-size: 17px;
+    color: $pink;
+    font-size: 20px;
+    font-weight: 500;
     &.active,
     &:focus {
       color: $pink_light;
@@ -113,5 +114,14 @@ header {
         @include font-size(20px);
       }
     }
+  }
+}
+
+.mobile-header {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px;
+  img {
+    max-width: 150px;
   }
 }

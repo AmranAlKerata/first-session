@@ -21,29 +21,29 @@ body.loader-avtive {
     .dot {
       width: 24px;
       height: 24px;
-      background: $pink_light;
+      background: #fff;
       border-radius: 100%;
       display: inline-block;
       animation: slide 1s infinite;
       &:nth-child(1) {
         animation-delay: 0.1s;
-        background: $pink_light;
+        background: #fff;
       }
       &:nth-child(2) {
         animation-delay: 0.2s;
-        background: $pink_light;
+        background: #fff;
       }
       &:nth-child(3) {
         animation-delay: 0.3s;
-        background: $pink_light;
+        background: #fff;
       }
       &:nth-child(4) {
         animation-delay: 0.4s;
-        background: $pink_light;
+        background: #fff;
       }
       &:nth-child(5) {
         animation-delay: 0.5s;
-        background: $pink_light;
+        background: #fff;
       }
       @-moz-keyframes slide {
         0% {

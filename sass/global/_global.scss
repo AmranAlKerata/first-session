@@ -19,7 +19,7 @@ body {
 body {
   overflow-x: hidden;
   font-size: 1rem;
-  font-family: $cairo;
+  font-family: $font;
   background-color: $pink;
 }
 h1,
@@ -30,7 +30,7 @@ h5,
 h6 {
   line-height: 1.2;
   color: $pink;
-  font-family: $cairo;
+  font-family: $font;
 }
 h1 {
   color: #fff;
@@ -44,14 +44,14 @@ h2 {
 h3,
 h4 {
   @include font-size(18px);
-  font-family: $cairo;
+  font-family: $font;
 }
 p,
 q {
   line-height: 1.9;
   @include font-size(18px);
   margin: 0;
-  font-family: $cairo;
+  font-family: $font;
   color: #fff;
   @include media ($md) {
     @include font-size(16px);
@@ -70,7 +70,7 @@ button:focus {
 
 a {
   @include font-size(14px);
-  font-family: $cairo;
+  font-family: $font;
   text-decoration: none;
   outline: none;
   transition: all 0.3s ease-in-out;

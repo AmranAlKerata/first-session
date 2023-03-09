@@ -1,18 +1,7 @@
 @use "../helpers/vars" as *;
 @use "../helpers/mixins" as *;
 @use "../bootstrap/vendor/rfs" as *;
-.about-us,
-.vision {
-  @include media($lg) {
-    padding-bottom: 0;
-  }
-}
-.mision,
-.vision {
-  @include media($lg) {
-    padding-top: 50px;
-  }
-}
+
 .about-us,
 .vision,
 .mision {

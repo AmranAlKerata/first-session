@@ -21,8 +21,8 @@ body {
 body {
   overflow-x: hidden;
   font-size: 1rem;
-  font-family: "cairo", sans-serif;
-  background-color: #ab0066;
+  font-family: "Tajawal", sans-serif;
+  background-color: #982e6d;
 }
 
 h1,
@@ -32,8 +32,8 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  color: #ab0066;
-  font-family: "cairo", sans-serif;
+  color: #982e6d;
+  font-family: "Tajawal", sans-serif;
 }
 
 h1 {
@@ -60,7 +60,7 @@ h2 {
 h3,
 h4 {
   font-size: 1.125rem;
-  font-family: "cairo", sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 p,
@@ -68,7 +68,7 @@ q {
   line-height: 1.9;
   font-size: 1.125rem;
   margin: 0;
-  font-family: "cairo", sans-serif;
+  font-family: "Tajawal", sans-serif;
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -91,7 +91,7 @@ button:focus {
 
 a {
   font-size: 0.875rem;
-  font-family: "cairo", sans-serif;
+  font-family: "Tajawal", sans-serif;
   text-decoration: none;
   outline: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -151,7 +151,7 @@ textarea {
 
 .form-control {
   background-color: transparent;
-  border-color: #ab0066;
+  border-color: #982e6d;
   border-radius: 5px;
   min-height: 60px;
   position: relative;
@@ -283,7 +283,7 @@ textarea:focus {
   padding: 0.9375rem calc(1.375rem + 1.5vw);
   border-radius: 10px;
   font-size: 1.125rem;
-  color: #ab0066;
+  color: #982e6d;
   font-weight: 600;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -295,19 +295,24 @@ textarea:focus {
     padding: 0.9375rem 2.5rem;
   }
 }
+@media (max-width: 768px) {
+  .button {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 1200px) {
   .button {
     margin-top: 1.875rem;
   }
 }
 .button.alt {
-  background-color: #ab0066;
+  background-color: #982e6d;
   color: #fff;
-  border-color: #ab0066;
+  border-color: #982e6d;
 }
 .button.alt:hover {
-  color: #ab0066;
-  border-color: #ab0066;
+  color: #982e6d;
+  border-color: #982e6d;
 }
 .button:hover {
   background-color: transparent;
@@ -360,8 +365,8 @@ textarea:focus {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #ab0066 !important;
-  border-color: #ab0066 !important;
+  background-color: #982e6d !important;
+  border-color: #982e6d !important;
 }
 
 body.loader-avtive {
@@ -376,7 +381,7 @@ body.loader-avtive {
   width: 100%;
   height: 100%;
   z-index: 999999999;
-  background-color: #ab0066;
+  background-color: #982e6d;
 }
 .loader-wrapper .loader {
   position: absolute;
@@ -389,7 +394,7 @@ body.loader-avtive {
 .loader-wrapper .loader .dot {
   width: 24px;
   height: 24px;
-  background: #2b3990;
+  background: #fff;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: slide 1s infinite;
@@ -398,27 +403,27 @@ body.loader-avtive {
 .loader-wrapper .loader .dot:nth-child(1) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
-  background: #2b3990;
+  background: #fff;
 }
 .loader-wrapper .loader .dot:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
-  background: #2b3990;
+  background: #fff;
 }
 .loader-wrapper .loader .dot:nth-child(3) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
-  background: #2b3990;
+  background: #fff;
 }
 .loader-wrapper .loader .dot:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  background: #2b3990;
+  background: #fff;
 }
 .loader-wrapper .loader .dot:nth-child(5) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
-  background: #2b3990;
+  background: #fff;
 }
 @-webkit-keyframes slide {
   0% {
@@ -482,7 +487,7 @@ section {
   }
 }
 header {
-  background-color: #ab0066;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   right: 0;
@@ -548,8 +553,9 @@ header.nav-up {
   top: -200px;
 }
 header .nav-link {
-  color: #fff;
-  font-size: 17px;
+  color: #982e6d;
+  font-size: 20px;
+  font-weight: 500;
 }
 header .nav-link.active, header .nav-link:focus {
   color: #2b3990;
@@ -581,7 +587,7 @@ header .nav-link:hover {
     display: block;
   }
   header #navbarNav {
-    background-color: #ab0066;
+    background-color: #982e6d;
     top: 0;
     right: 100%;
     z-index: 9;
@@ -613,6 +619,15 @@ header .nav-link:hover {
   }
 }
 
+.mobile-header {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px;
+}
+.mobile-header img {
+  max-width: 150px;
+}
+
 /* Home */
 .home {
   overflow: hidden;
@@ -635,6 +650,11 @@ header .nav-link:hover {
   }
   .home h1 {
     font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 40px;
   }
 }
 .home .hero-img {
@@ -684,20 +704,6 @@ header .nav-link:hover {
 @media (max-width: 1199px) {
   .home .circle.circle-2 {
     max-width: 300px;
-  }
-}
-
-@media (max-width: 992px) {
-  .about-us,
-.vision {
-    padding-bottom: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .mision,
-.vision {
-    padding-top: 50px;
   }
 }
 
@@ -833,7 +839,7 @@ header .nav-link:hover {
 }
 
 .our-services {
-  background-color: #ab0066;
+  background-color: #982e6d;
   padding: 80px 0;
 }
 .our-services .shapes img {
@@ -961,7 +967,7 @@ header .nav-link:hover {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  background-color: #ab0066;
+  background-color: #982e6d;
 }
 .team .team-photo-wrapper.blue {
   background-color: #96c1ca;
@@ -1119,7 +1125,7 @@ footer .social-media svg:hover {
 .page-banner {
   margin-top: calc(1.75rem + 6vw);
   height: 150px;
-  background-color: #ab0066;
+  background-color: #982e6d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1143,5 +1149,21 @@ footer .social-media svg:hover {
 @media (min-width: 1200px) {
   .page-banner h1 {
     font-size: 2.8125rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us,
+.vision,
+.mision,
+.our-services {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .mision,
+.vision {
+    padding-top: 50px;
   }
 }

@@ -2,5 +2,17 @@
 @use "../helpers/mixins" as *;
 @use "../bootstrap/vendor/rfs" as *;
 
-.before-after {
+.about-us,
+.vision,
+.mision,
+.our-services {
+  @include media($lg) {
+    padding-bottom: 0;
+  }
+}
+.mision,
+.vision {
+  @include media($lg) {
+    padding-top: 50px;
+  }
 }

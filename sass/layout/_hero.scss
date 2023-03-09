@@ -24,6 +24,11 @@
       font-size: 50px;
     }
   }
+  @include media($md) {
+    h1 {
+      font-size: 40px;
+    }
+  }
 
   .hero-img {
     position: absolute;
