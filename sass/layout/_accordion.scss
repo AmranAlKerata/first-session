@@ -1,0 +1,52 @@
+@use "../helpers/vars" as *;
+@use "../helpers/mixins" as *;
+@use "../bootstrap/vendor/rfs" as *;
+// SCSS
+$primary-color: #fff;
+$secondary-color: #ddd;
+
+.accordion {
+  border-radius: 8px;
+  padding: 16px;
+
+  .accordion-tab {
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: right;
+    outline: none;
+    transition: 0.4s;
+    border: 1px solid #fff;
+    h3 {
+      @include font-size(30px);
+      color: #fff;
+    }
+    &:hover {
+      background-color: darken(#2b3990, 10%);
+      border-color: transparent;
+    }
+
+    &.active {
+      border-bottom-color: transparent;
+      background-color: darken(#2b3990, 20%);
+    }
+  }
+
+  .accordion-panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 20px;
+    background-color: darken(#2b3990, 10%);
+
+    p {
+      color: $secondary-color;
+    }
+  }
+}
+.accordion-tab.active + .accordion-panel {
+  border-top: 1px solid #fff;
+  padding: 18px;
+}

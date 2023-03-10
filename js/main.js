@@ -143,3 +143,33 @@ $(function() {
     $("body").removeClass("loader-avtive");
   }, 2000);
 });
+
+// get all the accordion tabs
+const accordionTabs = document.querySelectorAll(".accordion-tab");
+
+// add event listener to each tab
+accordionTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    // remove active class from all tabs except the clicked one
+    accordionTabs.forEach((t) => {
+      if (t !== tab) {
+        t.classList.remove("active");
+        t.nextElementSibling.style.maxHeight = null;
+      }
+    });
+    // toggle active class for clicked tab
+    tab.classList.toggle("active");
+    // toggle paragraph visibility for clicked tab
+    const panel = tab.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+
+  // set the first tab to be active by default
+  if (index === 0) {
+    tab.click();
+  }
+});
