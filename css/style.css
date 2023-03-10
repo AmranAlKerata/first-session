@@ -1171,6 +1171,43 @@ footer .social-media svg:hover {
   }
 }
 
+.accordion-section .circles img {
+  position: absolute;
+  z-index: -1;
+}
+.accordion-section .circles img.one {
+  width: 98px;
+  height: 98px;
+  top: 57px;
+  right: 5%;
+  -webkit-animation: floating ease-in-out 3s infinite;
+          animation: floating ease-in-out 3s infinite;
+}
+.accordion-section .circles img.two {
+  width: 40px;
+  height: 40px;
+  bottom: 57px;
+  left: 30%;
+  -webkit-animation: floating ease-in-out 1s infinite alternate;
+          animation: floating ease-in-out 1s infinite alternate;
+}
+.accordion-section .circles img.three {
+  width: 74px;
+  height: 74px;
+  top: 103px;
+  left: 4%;
+  -webkit-animation: left_right ease-in-out 5s infinite;
+          animation: left_right ease-in-out 5s infinite;
+}
+.accordion-section .circles img.four {
+  width: 74px;
+  height: 74px;
+  bottom: 40px;
+  right: 2%;
+  -webkit-animation: left_right ease-in-out 2s infinite alternate;
+          animation: left_right ease-in-out 2s infinite alternate;
+}
+
 .accordion {
   border-radius: 8px;
   padding: 16px;

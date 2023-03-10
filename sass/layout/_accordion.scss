@@ -4,7 +4,42 @@
 // SCSS
 $primary-color: #fff;
 $secondary-color: #ddd;
-
+.accordion-section {
+  .circles {
+    img {
+      position: absolute;
+      z-index: -1;
+      &.one {
+        width: 98px;
+        height: 98px;
+        top: 57px;
+        #{$start-dir}: 5%;
+        animation: floating ease-in-out 3s infinite;
+      }
+      &.two {
+        width: 40px;
+        height: 40px;
+        bottom: 57px;
+        #{$end-dir}: 30%;
+        animation: floating ease-in-out 1s infinite alternate;
+      }
+      &.three {
+        width: 74px;
+        height: 74px;
+        top: 103px;
+        #{$end-dir}: 4%;
+        animation: left_right ease-in-out 5s infinite;
+      }
+      &.four {
+        width: 74px;
+        height: 74px;
+        bottom: 40px;
+        #{$start-dir}: 2%;
+        animation: left_right ease-in-out 2s infinite alternate;
+      }
+    }
+  }
+}
 .accordion {
   border-radius: 8px;
   padding: 16px;
