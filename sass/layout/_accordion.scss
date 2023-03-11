@@ -85,3 +85,32 @@ $secondary-color: #ddd;
   border-top: 1px solid #fff;
   padding: 18px;
 }
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes left_right {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  75% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
