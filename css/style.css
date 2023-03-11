@@ -115,21 +115,6 @@ li {
   border: none;
 }
 
-.contact-us form {
-  width: 60%;
-}
-@media (max-width: 992px) {
-  .contact-us form {
-    width: 100%;
-  }
-}
-.contact-us form .row {
-  row-gap: 50px;
-}
-.contact-us form .row label {
-  font-size: 1rem;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -149,132 +134,20 @@ textarea {
   border-radius: 50px;
 }
 
-.form-control {
-  background-color: transparent;
-  border-color: #982e6d;
-  border-radius: 5px;
-  min-height: 60px;
-  position: relative;
+.whats-app-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
   z-index: 999999;
 }
-
-.form-control:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-color: #fff;
+.whats-app-button img {
+  width: 50px;
 }
-
-.animation-delay-1 {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-.animation-delay-2 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.animation-delay-3 {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-}
-
-.animation-delay-4 {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.animation-delay-5 {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
-.animation-delay-6 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
-.animation-delay-7 {
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
-}
-
-.animation-delay-8 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
-.animation-delay-9 {
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
-}
-
-.animation-delay-10 {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-@media (max-width: 768px) {
-  .wow {
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    -webkit-transform: none !important;
-            transform: none !important;
-    -webkit-animation: none !important;
-            animation: none !important;
+@media (max-width: 576px) {
+  .whats-app-button {
+    bottom: 20px;
+    right: 20px;
   }
-}
-input,
-textarea {
-  background-color: transparent !important;
-  border-color: #fff !important;
-  color: #fff !important;
-}
-input:focus,
-textarea:focus {
-  background-color: transparent !important;
-  border-color: #fff !important;
-  color: #fff !important;
-}
-
-.floating-label-group {
-  position: relative;
-}
-.floating-label-group input,
-.floating-label-group textarea {
-  padding-left: 25px;
-  color: #fff;
-  border-color: #fff;
-}
-.floating-label-group .floating-label {
-  color: #fff;
-  position: absolute;
-  pointer-events: none;
-  top: 17px;
-  right: 25px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.floating-label-group input:focus ~ .floating-label,
-.floating-label-group input:not(:focus):valid ~ .floating-label {
-  top: -35px;
-  color: #fff;
-}
-.floating-label-group .is-floating-label {
-  position: relative;
-}
-.floating-label-group .is-floating-label label {
-  color: #fff;
-  position: absolute;
-  pointer-events: none;
-  top: 17px;
-  right: 25px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.floating-label-group .is-floating-label.is-focused label {
-  top: -35px;
-  color: #fff;
 }
 
 .button {
