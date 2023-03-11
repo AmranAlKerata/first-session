@@ -462,6 +462,12 @@ section {
   position: relative;
   z-index: 3;
 }
+@media (max-width: 992px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+}
 
 .section-heading {
   margin-bottom: 80px;

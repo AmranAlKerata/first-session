@@ -6,6 +6,10 @@ section {
   overflow: hidden;
   position: relative;
   z-index: 3;
+  @include media ($lg) {
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
 }
 
 .section-heading {
