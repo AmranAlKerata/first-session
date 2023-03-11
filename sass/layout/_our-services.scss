@@ -28,9 +28,9 @@
       margin-#{$end-dir}: 0;
     }
     .card-image img {
-      gf: 100%;
-      v: 300px;
-      s: contain;
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
     }
     .card-heading {
       font-weight: 600;
