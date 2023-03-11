@@ -20,6 +20,13 @@
   }
   @include media($lg) {
     padding-top: 30px;
+    padding-bottom: 0;
+    min-height: fit-content;
+    height: fit-content;
+    .row {
+      min-height: fit-content;
+      height: fit-content;
+    }
     h1 {
       font-size: 50px;
     }
@@ -28,25 +35,6 @@
     h1 {
       font-size: 40px;
     }
-  }
-
-  .hero-img {
-    // position: absolute;
-    // max-width: 300px;
-    // top: 100px;
-    // transform: translateX(-60px);
-    // @media (max-width: 1199px) {
-    //   max-width: 500px;
-    //   top: 50%;
-    //   transform: translateX(-60px) translateY(-50%);
-    // }
-    // @include media($lg) {
-    //   top: unset;
-    //   bottom: 0;
-    //   left: 0;
-    //   max-width: 100px;
-    //   z-index: -1;
-    // }
   }
 
   .circle {

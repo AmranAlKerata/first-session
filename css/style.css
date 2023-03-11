@@ -647,6 +647,21 @@ header .nav-link:hover {
 @media (max-width: 992px) {
   .home {
     padding-top: 30px;
+    padding-bottom: 0;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .home .row {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .home h1 {
     font-size: 50px;
@@ -1015,10 +1030,12 @@ footer .social-media svg:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 1px solid #fff;
+  border-radius: 10px;
 }
 .accordion .accordion-tab h3 {
   font-size: calc(1.3125rem + 0.75vw);
   color: #fff;
+  margin: 0;
 }
 @media (min-width: 1200px) {
   .accordion .accordion-tab h3 {
@@ -1042,6 +1059,8 @@ footer .social-media svg:hover {
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 20px;
   background-color: #1f2969;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .accordion .accordion-panel p {
   color: #ddd;
@@ -1050,6 +1069,11 @@ footer .social-media svg:hover {
 .accordion-tab.active + .accordion-panel {
   border-top: 1px solid #fff;
   padding: 18px;
+}
+
+.accordion-tab.active {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 @-webkit-keyframes floating {
