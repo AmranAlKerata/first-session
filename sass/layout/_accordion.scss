@@ -60,13 +60,13 @@ $secondary-color: #ddd;
       margin: 0;
     }
     &:hover {
-      background-color: darken(#2b3990, 10%);
+      background-color: darken(#c02e85, 10%);
       border-color: transparent;
     }
 
     &.active {
       border-bottom-color: transparent;
-      background-color: darken(#2b3990, 20%);
+      background-color: darken(#c02e85, 20%);
     }
   }
 
@@ -77,7 +77,7 @@ $secondary-color: #ddd;
     transition: max-height 0.2s ease-out;
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 20px;
-    background-color: darken(#2b3990, 10%);
+    background-color: darken(#c02e85, 10%);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 

@@ -652,6 +652,7 @@ header .nav-link:hover {
 .team img {
   max-width: 100%;
   width: auto;
+  border-radius: 50%;
 }
 .team .team-card {
   padding: calc(1.275rem + 0.3vw) calc(1.275rem + 0.3vw) calc(1.3125rem + 0.75vw);
@@ -923,12 +924,12 @@ footer .social-media svg:hover {
   }
 }
 .accordion .accordion-tab:hover {
-  background-color: #1f2969;
+  background-color: #972469;
   border-color: transparent;
 }
 .accordion .accordion-tab.active {
   border-bottom-color: transparent;
-  background-color: #141a41;
+  background-color: #6e1a4c;
 }
 .accordion .accordion-panel {
   padding: 0 18px;
@@ -938,7 +939,7 @@ footer .social-media svg:hover {
   transition: max-height 0.2s ease-out;
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 20px;
-  background-color: #1f2969;
+  background-color: #972469;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }

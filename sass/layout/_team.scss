@@ -29,6 +29,7 @@
   img {
     max-width: 100%;
     width: auto;
+    border-radius: 50%;
   }
   .team-card {
     @include padding(24px 24px 30px);
